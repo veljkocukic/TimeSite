@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="docu.css">
+    <title>VDate Docs</title>
+</head>
+
+<body>
+    <div class="side">
+        <h2>Documentation</h2>
+        <ul>
+            <li><a href="#ins">Installation</a></li>
+            <li><a href="#usg">Usage</a></li>
+            <li><a href="#cont">Contribution</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <section id="ins">
+            <h1>1. Installation</h1>
+            <div class="item">
+                <h2>Installing the package</h2>
+                <p>To install the package you need to have Node installed on your computer and
+                    <code>run npm -i vdate</code>
+                    command in the terminal to initialize installation. After the package has been installed, import
+                    it by using <code> import {VDate} from "vdate"</code>.
+                </p>
+            </div>
+        </section>
+
+        <section id="usg">
+            <h1>2. Usage</h1>
+            <div class="item">
+                <h2>2.1 Usage</h2>
+                <p>Using VDate is like using any other class since that's what VDate actually is - a class. There
+                    are two main ways of using VDate which are using the class methods to operate onto the selected date
+                    and the using of static method meant to work with external dates without creating objects.
+                </p>
+            </div>
+            <div class="item">
+                <h2>2.2 Date management methods</h2>
+                <p><span class="method">.getDay()</span> Returns the current day of the object. </p>
+                <p><span class="method">.getMonth()</span> Returns the current month of the object. </p>
+                <p><span class="method">.getYear()</span> Returns the current year of the object. </p>
+                <p><span class="method">.setYear(year)</span> Sets the year of the object.</p>
+                <p><span class="method">.setMonth(month</span> Sets the month of the object.</p>
+                <p><span class="method">.setDay(day)</span> Sets the day of the object.</p>
+                <p><span class="method">.addYears(num)</span> Adds inputed number of years to object's years.</p>
+                <p><span class="method">.addMonths(num)</span> Adds inputed number of months to object's months.</p>
+            </div>
+
+            <div class="item">
+                <h2>2.3 Date and time formats</h2>
+                <p><span class="method">.dmyDot()</span> Returns the date with day first and a <strong>dot</strong> as a
+                    separator. Example: <code>"5.4.2020."</code>.
+                </p>
+                <p><span class="method">.dmyDash()</span>Returns the date with day first and a <strong>dash</strong> as
+                    a separator. Example:<code>"5.4.2020."</code>.
+                </p>
+                <p><span class="method">.dmyZeroDot()</span>Returns the date with day first and a <strong>dot</strong>
+                    as a separator with the 0 before the number. Example: <code>"05.04.2020."</code>.
+                </p>
+                <p><span class="method">.dmyZeroDash()</span>Returns the date with day first and a <strong>dash</strong>
+                    as a separator with the 0 before the number. Example: <code>"05-04-2020"</code>.
+                </p>
+                <p><span class="method">.mdyDot()</span> Returns the date with month first and a <strong>dot</strong> as
+                    a separator. Example: <code>"4.5.2020."</code>.
+                </p>
+                <p><span class="method">.mdyDash()</span>Returns the date with month first and a <strong>dash</strong>
+                    as a separator. Example:<code>"4.5.2020."</code>.
+                </p>
+                <p><span class="method">.mdyZeroDot()</span>Returns the date with month first and a <strong>dot</strong>
+                    as a separator with the 0 before the number. Example: <code>"04.05.2020."</code>.
+                </p>
+                <p><span class="method">.mdyZeroDash()</span>Returns the date with month first and a
+                    <strong>dash</strong> as a separator with the 0 before the number. Example:
+                    <code>"04-05-2020"</code>.
+                </p>
+                <p><span class="method">.getTime()</span> Returns the time of the object without seconds.
+                    <code>"12:45"</code>
+                </p>
+                <p><span class="method">.getFullTime()</span> Returns the time of the object with seconds.
+                    <code>"12:45:25"</code>
+                </p>
+
+            </div>
+
+            <div class="item">
+                <h2>2.4 Date functionalities</h2>
+                <p><span class="method">.getWeek()</span> Returns the current week of the objects's date. </p>
+                <p><span class="method">.dayOfTheYear()</span> Returns the number of the day of the objects's date. </p>
+                <p>A static <span class="method">.dayOfTheYear(date)</span> accepts the date and returns the day of the
+                    year of the selected date. </p>
+                <p><span class="method">.getMonthName()</span> Returns the name of the current month of the object. </p>
+                <p><span class="method">.getMonthShort()</span> Returns the first three letters of the current month of
+                    the object. </p>
+                <p><span class="method">.getDayName()</span> Returns the name of the current day of the object. </p>
+                <p><span class="method">.getDayShort()</span> Returns the first three letters of the current day of
+                    the object. </p>
+                <p>A static method <span class="method">.equal(date1,date2)</span> takes in two dates and returns a
+                    boolean value based on whether or not the first date is after the second one.</p>
+                <p><span class="method">.isLeapYear()</span> Returns a boolean value based on whether or not the current
+                    year of the date of the object is a leap year. </p>
+                <p>To get the date in the standard Date() format, just access the <span class="method">.date</span>
+                    property of the created object.</p>
+
+
+            </div>
+        </section>
+        <section id="cont">
+            <h1>3. Contribution</h1>
+            <div class="item">
+                <h2>Contribution</h2>
+                <p>VDate is open source project and to contribute to it you just need to open an issue on GitHub and
+                    create a pull request. Repository is on <a href="https://github.com/veljkocukic/time">this link</a>.
+                    To contact the author, email to veljkocukic@gmail.com .
+                </p>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+
+</html>
